@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>逃避虽可耻但有用｜特别宣传页</title>
+  <meta name="description" content="日剧《逃避虽可耻但有用》非官方致敬宣传海报：两个人，一纸契约，一场关于生活与爱的温柔实验。">
+  <meta name="theme-color" content="#0d5ca8">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d5ca8'/%3E%3Cpath d='M16 24h32v25H16z' fill='%23fff7df'/%3E%3Cpath d='m12 28 20-17 20 17' fill='none' stroke='%23ffe24a' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M27 49V35h10v14' fill='%23f36c59'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --blue: #0d5ca8;
+      --blue-dark: #06386d;
+      --yellow: #ffe24a;
+      --cream: #fff8e5;
+      --coral: #f36c59;
+      --ink: #123049;
+      --paper: #f7f0dc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(13,92,168,.055) 1px, transparent 1px) 0 0 / 26px 26px,
+        linear-gradient(rgba(13,92,168,.055) 1px, transparent 1px) 0 0 / 26px 26px,
+        var(--paper);
+      font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .poster {
+      position: relative;
+      min-height: 100svh;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .poster::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 0 39%;
+      z-index: -3;
+      background: linear-gradient(135deg, #a7d6ef, #fff0bb 54%, #f4a38d);
+    }
+
+    .visual {
+      position: absolute;
+      inset: 0 0 0 39%;
+      z-index: -2;
+      overflow: hidden;
+    }
+
+    .visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 59% 50%;
+      filter: saturate(.94) contrast(.98);
+      transform: scale(1.035);
+      transition: transform .8s cubic-bezier(.2,.8,.2,1);
+    }
+
+    .visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, var(--paper) 0%, rgba(247,240,220,.9) 7%, transparent 34%),
+        linear-gradient(0deg, rgba(6,56,109,.22), transparent 42%);
+      pointer-events: none;
+    }
+
+    .poster:hover .visual img { transform: scale(1); }
+
+    .rail {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: clamp(28px, 3.3vw, 52px);
+      background: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: "Yu Mincho", "MS Mincho", serif;
+      font-size: .78rem;
+      letter-spacing: .34em;
+      writing-mode: vertical-rl;
+    }
+
+    .content {
+      width: min(100%, 1600px);
+      min-height: 100svh;
+      margin: 0 auto;
+      padding: clamp(28px, 4vw, 64px) clamp(24px, 5vw, 80px) clamp(24px, 3vw, 48px) clamp(64px, 8vw, 128px);
+      display: grid;
+      grid-template-columns: minmax(360px, .92fr) 1.34fr;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    .topline {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .tbs-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .tbs-mark::before {
+      content: "";
+      width: 32px;
+      height: 6px;
+      background: var(--coral);
+      border-radius: 99px;
+    }
+
+    .jp-title {
+      color: rgba(255,255,255,.92);
+      font-family: "Yu Mincho", "MS Mincho", serif;
+      font-size: clamp(.72rem, 1vw, .92rem);
+      letter-spacing: .3em;
+      writing-mode: vertical-rl;
+      text-shadow: 0 2px 14px rgba(6,56,109,.35);
+    }
+
+    .hero-copy {
+      align-self: center;
+      padding: 5vh 0 3vh;
+      position: relative;
+    }
+
+    .eyebrow {
+      margin: 0 0 1rem;
+      color: var(--blue);
+      font-weight: 900;
+      font-size: clamp(.8rem, 1vw, .95rem);
+      letter-spacing: .25em;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 7.2em;
+      color: var(--blue);
+      font-family: "STKaiti", "KaiTi", "Yu Mincho", serif;
+      font-size: clamp(3.35rem, 7.1vw, 7.7rem);
+      font-weight: 900;
+      line-height: .9;
+      letter-spacing: -.075em;
+      text-wrap: balance;
+      text-shadow: 4px 4px 0 rgba(255,255,255,.85);
+    }
+
+    h1 .useful {
+      color: var(--coral);
+      display: inline-block;
+      position: relative;
+    }
+
+    h1 .useful::after {
+      content: "";
+      position: absolute;
+      left: .03em;
+      right: -.08em;
+      bottom: -.12em;
+      height: .13em;
+      background: var(--yellow);
+      border-radius: 99px;
+      transform: rotate(-2deg);
+      z-index: -1;
+    }
+
+    .premise {
+      max-width: 28rem;
+      margin: clamp(24px, 4vh, 42px) 0 0;
+      font-family: "STKaiti", "KaiTi", serif;
+      font-size: clamp(1.05rem, 1.35vw, 1.34rem);
+      font-weight: 700;
+      line-height: 1.75;
+      letter-spacing: .03em;
+    }
+
+    .contract {
+      display: inline-block;
+      padding: .02em .26em;
+      background: var(--yellow);
+      color: var(--blue-dark);
+      transform: rotate(-1.5deg);
+    }
+
+    .footer {
+      grid-column: 1 / -1;
+      align-self: end;
+      display: grid;
+      grid-template-columns: minmax(320px, .92fr) 1.34fr;
+      align-items: end;
+      gap: clamp(28px, 5vw, 90px);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .tag {
+      border: 1.5px solid rgba(13,92,168,.38);
+      border-radius: 99px;
+      padding: .46rem .8rem;
+      background: rgba(255,248,229,.72);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      backdrop-filter: blur(9px);
+    }
+
+    .credit-card {
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 32px;
+      padding: clamp(18px, 2vw, 28px);
+      border: 1px solid rgba(255,255,255,.36);
+      background: linear-gradient(110deg, rgba(6,56,109,.82), rgba(13,92,168,.62));
+      box-shadow: 0 18px 45px rgba(6,56,109,.18);
+      backdrop-filter: blur(16px);
+    }
+
+    .names { display: flex; gap: clamp(18px, 3vw, 52px); }
+
+    .name small {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--yellow);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+    }
+
+    .name strong {
+      font-family: "STKaiti", "KaiTi", serif;
+      font-size: clamp(1.15rem, 1.6vw, 1.55rem);
+      letter-spacing: .06em;
+      white-space: nowrap;
+    }
+
+    .seal {
+      flex: 0 0 auto;
+      width: 72px;
+      aspect-ratio: 1;
+      border: 2px solid var(--yellow);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--yellow);
+      font-weight: 900;
+      font-size: .75rem;
+      line-height: 1.35;
+      text-align: center;
+      letter-spacing: .12em;
+      transform: rotate(-8deg);
+    }
+
+    .note {
+      position: absolute;
+      right: 12px;
+      bottom: 10px;
+      color: rgba(255,255,255,.68);
+      font-size: .66rem;
+      letter-spacing: .06em;
+    }
+
+    @media (max-width: 860px) {
+      .poster { min-height: 100svh; }
+      .poster::before, .visual { inset: 42% 0 0 0; }
+      .visual img { object-position: 56% 37%; }
+      .visual::after {
+        background: linear-gradient(180deg, var(--paper) 0%, rgba(247,240,220,.6) 12%, transparent 36%), linear-gradient(0deg, rgba(6,56,109,.42), transparent 60%);
+      }
+      .content {
+        padding: 24px 20px 22px 52px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto minmax(46vh, 1fr) auto;
+      }
+      .topline { grid-column: 1; }
+      .jp-title { color: var(--blue); text-shadow: none; }
+      .hero-copy { align-self: start; padding: 4vh 0 1vh; }
+      h1 { max-width: 6.7em; font-size: clamp(3.1rem, 15vw, 6rem); }
+      .premise { max-width: 22rem; margin-top: 20px; font-size: 1rem; line-height: 1.6; }
+      .footer { grid-column: 1; grid-row: 4; grid-template-columns: 1fr; gap: 12px; }
+      .tags { display: none; }
+      .credit-card { padding: 15px 16px; gap: 12px; }
+      .names { gap: 18px; }
+      .seal { width: 58px; font-size: .65rem; }
+      .note { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .content { padding-left: 46px; }
+      .tbs-mark { font-size: .7rem; }
+      .tbs-mark::before { width: 23px; }
+      .hero-copy { padding-top: 3vh; }
+      .premise { max-width: 18rem; }
+      .name small { font-size: .62rem; }
+      .name strong { font-size: 1rem; }
+      .seal { width: 51px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="poster" aria-label="《逃避虽可耻但有用》宣传海报">
+    <div class="visual" aria-hidden="true">
+      <img src="poster-hero.png" alt="">
+    </div>
+    <aside class="rail">NIGEHAJI · SPECIAL POSTER</aside>
+
+    <div class="content">
+      <header class="topline">
+        <div class="tbs-mark">日剧特别宣传</div>
+        <div class="jp-title" lang="ja">逃げるは恥だが役に立つ</div>
+      </header>
+
+      <section class="hero-copy">
+        <p class="eyebrow">两个人 · 一纸契约 · 一场生活实验</p>
+        <h1>逃避虽可耻<br>但<span class="useful">有用</span></h1>
+        <p class="premise">“雇主”与“员工”的关系，因为一场<span class="contract">契约婚姻</span>住进同一个屋檐下。家务可以计算，心动却没有公式。</p>
+      </section>
+
+      <footer class="footer">
+        <div class="tags" aria-label="剧集关键词">
+          <span class="tag">浪漫喜剧</span>
+          <span class="tag">契约结婚</span>
+          <span class="tag">温柔日常</span>
+        </div>
+        <div class="credit-card">
+          <div class="names">
+            <div class="name"><small>森山实栗</small><strong>新垣结衣</strong></div>
+            <div class="name"><small>津崎平匡</small><strong>星野 源</strong></div>
+          </div>
+          <div class="seal">现在<br>重温</div>
+        </div>
+      </footer>
+    </div>
+    <small class="note">非官方致敬宣传页 · FAN-MADE TRIBUTE</small>
+  </main>
+</body>
+</html>
