@@ -1,1 +1,34 @@
+# Sites local runtime and generated deployment packages
 .sites-runtime/
+
+# Dependencies and caches
+node_modules/
+.cache/
+.tmp/
+tmp/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Locally generated archives
+*.zip
+*.tar
+*.tar.gz
